@@ -6,14 +6,14 @@ Este projeto é uma evolução de um sistema bancário simples desenvolvido em P
 
 ## Funcionalidades
 ```
-| Função          | Descrição |
-|----------------|-----------|
-| `depositar()`  | Realiza depósitos apenas com argumentos posicionais |
-| `sacar()`      | Realiza saques com argumentos nomeados (keyword only) |
+| Função         | Descrição                                                  |
+|----------------|------------------------------------------------------------|
+| `depositar()`  | Realiza depósitos apenas com argumentos posicionais        |
+| `sacar()`      | Realiza saques com argumentos nomeados (keyword only)      |
 | `exibir_extrato()` | Exibe extrato com combinação de argumentos posicionais e nomeados |
-| `criar_usuario()` | Cadastra novos clientes com validação automática de **CPF e data de nascimento (>=18 anos)** |
+| `criar_usuario()` | Cadastra novos clientes com validação automática de **CPF e data de nascimento (>=18 anos)**                                              |
 | `criar_conta()` | Cria contas vinculado a um usuário existente (`agência fixa 0001`) |
-| `listar_contas()` | Lista todas as contas cadastradas |
+| `listar_contas()` | Lista todas as contas cadastradas                       |
 
 ```
 
@@ -34,12 +34,12 @@ Este projeto é uma evolução de um sistema bancário simples desenvolvido em P
 Cada usuário possui:
 
 ```
-| Campo | Formato |
-|--------|---------|
-| Nome | Texto livre |
-| CPF | Armazenado apenas com números (validado) |
-| Data de Nascimento | `dd/mm/aaaa` ou `dd/mm/aa` (>=18 anos) |
-| Endereço | `logradouro, nro - bairro - cidade/UF` |
+| Campo    | Formato                                             |
+|----------|-----------------------------------------------------|
+| Nome     | Texto livre                                         |
+| CPF      | Armazenado apenas com números (validado)            |
+| Nasc     | `dd/mm/aaaa` ou `dd/mm/aa` (>=18 anos)              |
+| Endereço | `logradouro, nro - bairro - cidade/UF`              |
 ```
 ⚠️ **Não é permitido cadastrar dois usuários com o mesmo CPF.**
 
@@ -47,11 +47,11 @@ Cada usuário possui:
 
 ### 💳 Contas
 ```
-| Campo | Valor |
-|--------|------|
-| Agência | `0001` (fixa) |
+| Campo | Valor                               |
+|--------|------------------------------------|
+| Agência | `0001` (fixa)                     |
 | Número da Conta | Sequencial (1, 2, 3, ...) |
-| Usuário | Associado pelo CPF |
+| Usuário | Associado pelo CPF                |
 ```
 ✔ Um usuário pode possuir **várias contas**, mas **cada conta pertence a apenas um usuário**.
 
